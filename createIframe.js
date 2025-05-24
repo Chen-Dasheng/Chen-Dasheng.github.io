@@ -3,8 +3,6 @@ function createIframe(targetURL, height) {
     var src = targetURL || document.getElementById("targetURL").value;
     if (src == "") {
         var object = document.createElement("object");
-        object.id = "object";
-        object.title = "object";
         object.width = "100%";
         object.data = "/webInsert.html";
         window.parent.document.body.appendChild(object);
