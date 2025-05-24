@@ -1,6 +1,6 @@
-function createIframe() {
-    var height = document.getElementById("iframeHeight").value;
-    var src = document.getElementById("targetURL").value;
+function createIframe(targetURL, height) {
+    var height = height || document.getElementById("iframeHeight").value;
+    var src = targetURL || document.getElementById("targetURL").value;
     if (src == "") {
         var object = document.createElement("object");
         object.id = "object";
