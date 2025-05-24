@@ -5,7 +5,7 @@ function createIframe(targetURL, height) {
         var object = document.createElement("object");
         object.width = "100%";
         object.data = "/webInsert.html";
-        window.parent.document.body.appendChild(object);
+        window.document.body.appendChild(object);
         return'success';
     }
     else {
@@ -21,7 +21,7 @@ function createIframe(targetURL, height) {
         else {
             iframe.height = height; 
         }
-        window.parent.document.body.appendChild(iframe);
+        window.document.body.appendChild(iframe);
         return 'success';
     }
 }
