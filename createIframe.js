@@ -1,4 +1,4 @@
-function createIframe(mode=0,targetURL, height) {
+function createIframe(mode=0, targetURL, height) {
     var height = height || document.getElementById("iframeHeight").value;
     var src = targetURL || document.getElementById("targetURL").value;
     if (src == "") {
@@ -21,7 +21,7 @@ function createIframe(mode=0,targetURL, height) {
         else {
             iframe.height = height; 
         }
-        if (mode == 1){
+        if (mode == 0){
             window.document.body.appendChild(iframe);
         }
         else{
