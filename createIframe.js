@@ -1,22 +1,29 @@
 function createIframe() {
-    var iFrame = document.createElement("iframe");
-    iFrame.id = "iframe";
-    iFrame.title = "iframe";
-    iFrame.width = "100%";
     var height = document.getElementById("iframeHeight").value;
     var src = document.getElementById("targetURL").value;
-    if (height == "") {
-        iFrame.height = "800"; 
-    }
-    else {
-        iFrame.height = height; 
-    }
     if (src == "") {
-        iFrame.src = "/webInsert.html" 
+        var object = document.createElement("object");
+        object.id = "object";
+        object.title = "object";
+        object.width = "100%";
+        object.data = "/webInsert.html";
+        window.parent.document.body.appendChild(object);
+        return'success';
     }
     else {
-        iFrame.src = src; 
+        var iframe = document.createElement("iframe");
+        iframe.id = "iframe";
+        iframe.title = "iframe";
+        iframe.width = "100%";
+        iframe.frameBorder = "0";
+        iframe.src = src; 
+        if (height == "") {
+            iframe.height = "800"; 
+        }
+        else {
+            iframe.height = height; 
+        }
+        window.parent.document.body.appendChild(iframe);
+        return 'success';
     }
-    window.parent.document.body.appendChild(iFrame);
-    return 'success';
 }
