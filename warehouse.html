@@ -45,43 +45,71 @@
     <div id="preview-container"></div>
 
     <script>
-        // 文件列表数据（建议后续改为自动生成或通过API获取）
-        const fileManifest = [
-            { name: '介词(1).pdf', path: '/assets/介词(1).pdf' },
-            { name: '《朝闻道》演讲.pptx', path: '/assets/《朝闻道》演讲.pptx' }
-        ];
-
-        // 动态生成文件列表
-        function renderFileList() {
-            const container = document.getElementById('fileList');
-            fileManifest.forEach(file => {
-                const div = document.createElement('div');
-                div.className = 'file-item';
-                div.innerHTML = `
-                    ${file.name}
-                    <button onclick="previewFile('${file.path}')">预览</button>
-                `;
-                container.appendChild(div);
-            });
+    // 文件列表数据（增加完整URL路径）
+    const fileManifest = [
+        { 
+            name: '介词(1).pdf', 
+            path: 'https://snaplittlebear.top/assets/介词(1).pdf', // 改为完整URL
+            type: 'pdf'
+        },
+        { 
+            name: '《朝闻道》演讲.pptx', 
+            path: 'https://snaplittlebear.top/assets/《朝闻道》演讲.pptx',
+            type: 'ppt' 
         }
+    ];
 
-        // 文件预览功能
-        function previewFile(filePath) {
-            const previewContainer = document.getElementById('preview-container');
-            previewContainer.innerHTML = `
-                <button class="close-btn" onclick="this.parentElement.innerHTML=''">× 关闭预览</button>
-                <iframe 
-                    src="${filePath}" 
-                    width="100%" 
-                    height="900px" 
-                    frameborder="0"
-                    style="background: #fff;">
-                </iframe>
+    // 动态生成文件列表（增加索引参数）
+    function renderFileList() {
+        const container = document.getElementById('fileList');
+        container.innerHTML = ''; // 清空原有内容
+        fileManifest.forEach((file, index) => {
+            const div = document.createElement('div');
+            div.className = 'file-item';
+            div.innerHTML = `
+                ${file.name}
+                <button onclick="previewFile(${index})">预览</button>
             `;
+            container.appendChild(div);
+        });
+    }
+
+    // 新版预览功能（根据类型选择查看器）
+    function previewFile(index) {
+        const file = fileManifest[index];
+        const previewContainer = document.getElementById('preview-container');
+        
+        let viewerHTML = '';
+        switch(file.type) {
+            case 'pdf':
+                viewerHTML = `
+                    <iframe 
+                        src="https://alist-org.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(file.path)}"
+                        width="100%" 
+                        height="900px"
+                        style="background: #fff;">
+                    </iframe>`;
+                break;
+            case 'ppt':
+                viewerHTML = `
+                    <iframe 
+                        src="https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(file.path)}"
+                        width="100%" 
+                        height="900px" 
+                        frameborder="0"
+                        style="background: #fff;">
+                    </iframe>`;
+                break;
+            // 可继续添加其他文件类型支持
         }
 
-        // 初始化加载文件列表
-        window.onload = renderFileList;
-    </script>
+        previewContainer.innerHTML = `
+            <button class="close-btn" onclick="this.parentElement.innerHTML=''">× 关闭预览</button>
+            ${viewerHTML}
+        `;
+    }
+
+    window.onload = renderFileList;
+</script>
 </body>
 </html>
