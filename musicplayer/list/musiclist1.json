@@ -1,0 +1,69 @@
+{
+  "audio":
+  [
+  {
+    "name": "I can walk on water i can fly",
+    "artist": "Nightcore",
+    "url": "/musicplayer/music/Nightcore - I can walk on water i can fly.wav",
+    "cover": "",
+    "lrc": "",
+    "theme": "#ea7408"
+  },
+  {
+    "name": "新宝島",
+    "artist": "sakanaction (サカナクション)",
+    "url": "/musicplayer/music/sakanaction (サカナクション) - 新宝島.flac",
+    "cover": "",
+    "lrc": "",
+    "theme": "#13d0dc"
+  },
+  {
+    "name": "Tick Tock (Undertronic Original)",
+    "artist": "SharaX",
+    "url": "/musicplayer/music/SharaX - Tick Tock (Undertronic Original).flac",
+    "cover": "",
+    "lrc": "",
+    "theme": "#9269fc"
+  },
+  {
+    "name": "Our Story (Wisp X Remix)",
+    "artist": "Wisp X",
+    "url": "/musicplayer/music/Wisp X - Our Story (Wisp X Remix).flac",
+    "cover": "",
+    "lrc": "",
+    "theme": "#fa2dbf"
+  },
+  {
+    "name": "夜に駆ける (向夜晚奔去)",
+    "artist": "YOASOBI (ヨアソビ)",
+    "url": "/musicplayer/music/YOASOBI (ヨアソビ) - 夜に駆ける (向夜晚奔去).flac",
+    "cover": "",
+    "lrc": "",
+    "theme": "#b97f5b"
+  },
+  {
+    "name": "One Last Kiss",
+    "artist": "宇多田光 (宇多田ヒカル)",
+    "url": "/musicplayer/music/宇多田光 (宇多田ヒカル) - One Last Kiss.flac",
+    "cover": "",
+    "lrc": "",
+    "theme": "#12cb57"
+  },
+  {
+    "name": "聞こえていますか…僕らの声が",
+    "artist": "煉獄小僧 (炼狱小僧)",
+    "url": "/musicplayer/music/煉獄小僧 (炼狱小僧) - 聞こえていますか…僕らの声が.flac",
+    "cover": "",
+    "lrc": "",
+    "theme": "#61a20d"
+  },
+  {
+    "name": "无人区-Vacuum Track#ADD8E6-",
+    "artist": "米缐p_",
+    "url": "/musicplayer/music/米缐p_ - 无人区-Vacuum Track#ADD8E6-.flac",
+    "cover": "",
+    "lrc": "",
+    "theme": "#7dde89"
+  }
+]
+}

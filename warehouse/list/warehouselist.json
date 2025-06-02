@@ -1,0 +1,24 @@
+{
+  "filelist": [
+    {
+      "name": "What is Fate",
+      "path": "/warehouse/What is Fate.docx",
+      "type": "docx"
+    },
+    {
+      "name": "《朝闻道》演讲",
+      "path": "/warehouse/《朝闻道》演讲.pptx",
+      "type": "pptx"
+    },
+    {
+      "name": "介词(1)",
+      "path": "/warehouse/介词(1).pdf",
+      "type": "pdf"
+    },
+    {
+      "name": "朝闻道 (刘慈欣) (Z-Library)",
+      "path": "/warehouse/朝闻道 (刘慈欣) (Z-Library).mobi",
+      "type": "mobi"
+    }
+  ]
+}

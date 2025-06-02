@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="/musicplayer/dist/APlayer.min.css">
+    <style>
+        body {
+            background: #f7f7f7;
+            font-family: "Segoe UI", "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        #playlist-select {
+            margin: 40px 0 20px 0;
+            padding: 8px 16px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: border-color 0.2s;
+        }
+        #playlist-select:focus {
+            border-color: #FADFA3;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="/index.html" style="display:inline-block; margin:16px;">
+    <img src="icon.png" alt="返回主页" style="height:40px;">
+    </a>
+    <link rel="stylesheet" href="/musicplayer/dist/APlayer.min.css">
+    <!-- 歌单选择下拉框 -->
+    <select id="playlist-select">
+        <option value="/musicplayer/list/musiclist1.json">歌单1</option>
+        <option value="/musicplayer/list/playlist2.json">playlist2</option>
+        <!-- 可根据实际歌单文件添加更多选项 -->
+    </select>
+    <div id="aplayer"></div>
+    <script src="/musicplayer/dist/APlayer.min.js"></script>
+    <script>
+        let ap;
+
+        // 初始化播放器
+        function initPlayer(audioList) {
+            if (ap) {
+                ap.destroy();
+            }
+            ap = new APlayer({
+                container: document.getElementById('aplayer'),
+                mini: false,
+                autoplay: false,
+                theme: '#FADFA3',
+                loop: 'all',
+                order: 'random',
+                preload: 'auto',
+                volume: 0.7,
+                mutex: true,
+                listFolded: false,
+                listMaxHeight: 90,
+                lrcType: 3,
+                audio: audioList
+            });
+        }
+
+        // 加载歌单
+        function loadPlaylist(filename) {
+            fetch(`${filename}`)
+                .then(res => res.json())
+                .then(data => {
+                    initPlayer(data.audio);
+                });
+        }
+
+        // 监听下拉框变化
+        document.getElementById('playlist-select').addEventListener('change', function() {
+            loadPlaylist(this.value);
+        });
+
+        // 页面加载时默认加载第一个歌单
+        loadPlaylist(document.getElementById('playlist-select').value);
+    </script>
+</body>
+</html>

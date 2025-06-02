@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warehouse</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
     <style>
         .file-list {
             margin: 20px;
@@ -36,6 +37,9 @@
     </style>
 </head>
 <body>
+    <a href="/index.html" style="display:inline-block; margin:16px;">
+    <img src="icon.png" alt="返回主页" style="height:40px;">
+    </a>
     <h1>资源仓库</h1>
     
     <div class="file-list" id="fileList">
@@ -45,24 +49,12 @@
     <div id="preview-container"></div>
 
     <script>
-    // 文件列表数据（增加完整URL路径）
-    const fileManifest = [
-        { 
-            name: '介词(1).pdf', 
-            path: 'https://snaplittlebear.top/assets/介词(1).pdf', // 改为完整URL
-            type: 'pdf'
-        },
-        { 
-            name: '《朝闻道》演讲.pptx', 
-            path: 'https://snaplittlebear.top/assets/《朝闻道》演讲.pptx',
-            type: 'ppt' 
-        }
-    ];
-
-    // 动态生成文件列表（增加索引参数）
+    // 动态加载 JSON 文件并渲染文件列表
+    let fileManifest = [];
+    
     function renderFileList() {
         const container = document.getElementById('fileList');
-        container.innerHTML = ''; // 清空原有内容
+        container.innerHTML = '';
         fileManifest.forEach((file, index) => {
             const div = document.createElement('div');
             div.className = 'file-item';
@@ -73,12 +65,26 @@
             container.appendChild(div);
         });
     }
-
-    // 新版预览功能（根据类型选择查看器）
+    
+    // 加载 warehouselist.json 并初始化 fileManifest
+    fetch('/warehouse/list/warehouselist.json')
+        .then(res => res.json())
+        .then(data => {
+            // 可选：拼接域名，若需外链可用如下方式
+            // const domain = 'https://snaplittlebear.top';
+            // fileManifest = data.filelist.map(f => ({...f, path: domain + f.path}));
+            fileManifest = data.filelist;   
+            renderFileList();
+        })
+        .catch(err => {
+            console.error('文件列表加载失败', err);
+            // 可选：降级为本地静态列表
+        });
+    
+    // 预览功能保持不变
     function previewFile(index) {
         const file = fileManifest[index];
         const previewContainer = document.getElementById('preview-container');
-        
         let viewerHTML = '';
         switch(file.type) {
             case 'pdf':
@@ -91,6 +97,9 @@
                     </iframe>`;
                 break;
             case 'ppt':
+            case 'pptx':
+            case 'doc':
+            case 'docx':
                 viewerHTML = `
                     <iframe 
                         src="https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(file.path)}"
@@ -102,14 +111,11 @@
                 break;
             // 可继续添加其他文件类型支持
         }
-
         previewContainer.innerHTML = `
             <button class="close-btn" onclick="this.parentElement.innerHTML=''">× 关闭预览</button>
             ${viewerHTML}
         `;
     }
-
-    window.onload = renderFileList;
-</script>
+    </script>
 </body>
 </html>

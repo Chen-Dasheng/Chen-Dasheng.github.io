@@ -4,10 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SnapLittlebear</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f6fa;
+        }
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100vh;
+            background: #232946;
+            color: #fff;
+            padding: 40px 0 0 0;
+            box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar h1 {
+            font-size: 1.4em;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+        .sidebar .nav-btn {
+            display: block;
+            width: 150px;
+            margin: 10px 0;
+            padding: 12px 0;
+            background: #eebbc3;
+            color: #232946;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+            cursor: pointer;
+        }
+        .sidebar .nav-btn:hover {
+            background: #d4939d;
+            color: #fff;
+        }
+        .main-content {
+            margin-left: 220px;
+            padding: 40px;
+        }
+    </style>
 </head>
 <body>
-    <h1>SnapLittlebear的网站</h1>
-    <p><a href="/webInsert.html">网页嵌入器</a></p>
-    <p><a href="/warehouse.html">仓库</a></p>
+    <div class="sidebar">
+        <h1>SnapLittlebear</h1>
+        <a href="/warehouse.html" class="nav-btn">仓库</a>
+        <a href="/music.html" class="nav-btn">音乐播放器</a>
+    </div>
+    <div class="main-content">
+        <h2>欢迎来到 SnapLittlebear 的网站！</h2>
+        <p>请选择左侧的功能按钮进行访问。</p>
+    </div>
 </body>
 </html>

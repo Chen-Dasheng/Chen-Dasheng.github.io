@@ -1,9 +1,0 @@
-可以参考下alist的做法
-"doc,docx,xls,xlsx,ppt,pptx": {
-		"Microsoft":"https://view.officeapps.live.com/op/view.aspx?src=$e_url",
-		"Google":"https://docs.google.com/gview?url=$e_url&embedded=true"
-	},
-	"pdf": {
-		"PDF.js":"https://alist-org.github.io/pdf.js/web/viewer.html?file=$e_url"
-	}
-调用别的工具显示
