@@ -85,12 +85,13 @@
     function previewFile(index) {
         const file = fileManifest[index];
         const previewContainer = document.getElementById('preview-container');
+        const file_url='//'+document.domain+file.path;
         let viewerHTML = '';
         switch(file.type) {
             case 'pdf':
                 viewerHTML = `
                     <iframe 
-                        src="https://alist-org.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(file.path)}"
+                        src="https://alist-org.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(file_url)}"
                         width="100%" 
                         height="900px"
                         style="background: #fff;">
@@ -102,7 +103,7 @@
             case 'docx':
                 viewerHTML = `
                     <iframe 
-                        src="https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(file.path)}"
+                        src="https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(file_url)}"
                         width="100%" 
                         height="900px" 
                         frameborder="0"
