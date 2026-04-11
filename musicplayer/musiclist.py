@@ -8,7 +8,7 @@ def random_hex_color():
     return "#{:06x}".format(random.randint(0, 0xFFFFFF))
 
 def get_music_files(directory):
-    exts = ('.mp3', '.flac', '.wav', '.m4a', '.ogg')
+    exts = ('.mp3', '.flac', '.wav', '.m4a', '.ogg', '.mgg', '.aac')
     return [f for f in os.listdir(directory) if f.lower().endswith(exts)]
 
 def find_file_with_same_name(directory, basename, exts):
@@ -37,8 +37,8 @@ def build_music_list(directory):
         cover = find_file_with_same_name(directory, name, ['.jpg', '.png', '.jpeg'])
         cover = cover.replace("\\", "/") if cover else ""
         # 歌词（查找同名lrc文件）
-        lrc = find_file_with_same_name(directory, name, ['.lrc'])
-        lrc = lrc.replace("\\", "/") if lrc else ""
+        lrc_path = find_file_with_same_name(directory, name, ['.lrc'])
+        lrc = f"/musicplayer/music/{name}.lrc" if lrc_path else ""
         # theme
         theme = random_hex_color()
         music_list.append({

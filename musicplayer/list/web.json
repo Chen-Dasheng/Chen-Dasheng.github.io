@@ -1,0 +1,508 @@
+{
+  "audio": [
+    {
+      "name": "のみこ",
+      "artist": "Bad Apple!!",
+      "url": "/musicplayer/music/Bad Apple!!-のみこ.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/Bad Apple!!-のみこ.lrc",
+      "theme": "#210802"
+    },
+    {
+      "name": "歌ってみた",
+      "artist": "CARAMELLDANSEN(ウッーウッーウマウマ(゜∀゜)",
+      "url": "/musicplayer/music/CARAMELLDANSEN(ウッーウッーウマウマ(゜∀゜) - 歌ってみた.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/CARAMELLDANSEN(ウッーウッーウマウマ(゜∀゜) - 歌ってみた.lrc",
+      "theme": "#6183f2"
+    },
+    {
+      "name": "Lensko",
+      "artist": "Cetus",
+      "url": "/musicplayer/music/Cetus - Lensko.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Cetus - Lensko.lrc",
+      "theme": "#ee5440"
+    },
+    {
+      "name": "Kirara Magic",
+      "artist": "Chrono",
+      "url": "/musicplayer/music/Chrono - Kirara Magic.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Chrono - Kirara Magic.lrc",
+      "theme": "#337cd1"
+    },
+    {
+      "name": "Demon-K",
+      "artist": "Cyberpunk",
+      "url": "/musicplayer/music/Cyberpunk - Demon-K.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Cyberpunk - Demon-K.lrc",
+      "theme": "#81d340"
+    },
+    {
+      "name": "Aaron Smith&Krono&Luvli",
+      "artist": "Dancin (Krono Remix)",
+      "url": "/musicplayer/music/Dancin (Krono Remix)-Aaron Smith&Krono&Luvli.aac",
+      "cover": "",
+      "lrc": "/musicplayer/music/Dancin (Krono Remix)-Aaron Smith&Krono&Luvli.lrc",
+      "theme": "#a97c78"
+    },
+    {
+      "name": "FKJ",
+      "artist": "Drops",
+      "url": "/musicplayer/music/Drops-FKJ.aac",
+      "cover": "",
+      "lrc": "/musicplayer/music/Drops-FKJ.lrc",
+      "theme": "#7bd00a"
+    },
+    {
+      "name": "TannerPls",
+      "artist": "Emotional Damage (Asian Level Tiktok Edit)",
+      "url": "/musicplayer/music/Emotional Damage (Asian Level Tiktok Edit) - TannerPls.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Emotional Damage (Asian Level Tiktok Edit) - TannerPls.lrc",
+      "theme": "#07f139"
+    },
+    {
+      "name": "Thomas Bergersen",
+      "artist": "Empire of Angels",
+      "url": "/musicplayer/music/Empire of Angels-Thomas Bergersen.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/Empire of Angels-Thomas Bergersen.lrc",
+      "theme": "#b85cc3"
+    },
+    {
+      "name": "Feint",
+      "artist": "Fading Wind",
+      "url": "/musicplayer/music/Fading Wind - Feint.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Fading Wind - Feint.lrc",
+      "theme": "#a2665a"
+    },
+    {
+      "name": "K2 SOUND",
+      "artist": "fairy stage",
+      "url": "/musicplayer/music/fairy stage - K2 SOUND.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/fairy stage - K2 SOUND.lrc",
+      "theme": "#0a9580"
+    },
+    {
+      "name": "未来古代楽団 _ GUMI",
+      "artist": "Forgotten Words 忘れじの言の葉 (feat_ GUMI) [English Ver_]",
+      "url": "/musicplayer/music/Forgotten Words 忘れじの言の葉 (feat_ GUMI) [English Ver_] - 未来古代楽団 _ GUMI.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Forgotten Words 忘れじの言の葉 (feat_ GUMI) [English Ver_] - 未来古代楽団 _ GUMI.lrc",
+      "theme": "#8817d4"
+    },
+    {
+      "name": "Don Diablo _ Tony Ann",
+      "artist": "Future Rain",
+      "url": "/musicplayer/music/Future Rain - Don Diablo _ Tony Ann.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Future Rain - Don Diablo _ Tony Ann.lrc",
+      "theme": "#69df86"
+    },
+    {
+      "name": "P Remix) - Xomu _ Hyurin _ Kumi-P _ mitsune微音",
+      "artist": "Gloxinia (Kumi",
+      "url": "/musicplayer/music/Gloxinia (Kumi-P Remix) - Xomu _ Hyurin _ Kumi-P _ mitsune微音.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Gloxinia (Kumi-P Remix) - Xomu _ Hyurin _ Kumi-P _ mitsune微音.lrc",
+      "theme": "#3314cd"
+    },
+    {
+      "name": "Klaas",
+      "artist": "Gravity",
+      "url": "/musicplayer/music/Gravity - Klaas.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Gravity - Klaas.lrc",
+      "theme": "#f74bfe"
+    },
+    {
+      "name": "Lion Project",
+      "artist": "Happy Children 2002",
+      "url": "/musicplayer/music/Happy Children 2002-Lion Project.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/Happy Children 2002-Lion Project.lrc",
+      "theme": "#241650"
+    },
+    {
+      "name": "Broiler&Skinny Days",
+      "artist": "I Got No One",
+      "url": "/musicplayer/music/I Got No One-Broiler&Skinny Days.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/I Got No One-Broiler&Skinny Days.lrc",
+      "theme": "#8231c3"
+    },
+    {
+      "name": "野宮あゆみ",
+      "artist": "I will Never Forget You (我永远不会忘记你)",
+      "url": "/musicplayer/music/I will Never Forget You (我永远不会忘记你) - 野宮あゆみ.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/I will Never Forget You (我永远不会忘记你) - 野宮あゆみ.lrc",
+      "theme": "#acfe13"
+    },
+    {
+      "name": "Shawn Mendes",
+      "artist": "If I Can't Have You",
+      "url": "/musicplayer/music/If I Can't Have You-Shawn Mendes.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/If I Can't Have You-Shawn Mendes.lrc",
+      "theme": "#a45084"
+    },
+    {
+      "name": "Sati Akura",
+      "artist": "Lagtrain (Russian ver.)",
+      "url": "/musicplayer/music/Lagtrain (Russian ver.)-Sati Akura.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/Lagtrain (Russian ver.)-Sati Akura.lrc",
+      "theme": "#07f3b7"
+    },
+    {
+      "name": "Lia",
+      "artist": "Light colors",
+      "url": "/musicplayer/music/Light colors - Lia.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Light colors - Lia.lrc",
+      "theme": "#bc4241"
+    },
+    {
+      "name": "Various Artists",
+      "artist": "Megalovania",
+      "url": "/musicplayer/music/Megalovania - Various Artists.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Megalovania - Various Artists.lrc",
+      "theme": "#b5db23"
+    },
+    {
+      "name": "Thomas Bergersen",
+      "artist": "Memoria",
+      "url": "/musicplayer/music/Memoria - Thomas Bergersen.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Memoria - Thomas Bergersen.lrc",
+      "theme": "#d0372d"
+    },
+    {
+      "name": "Anamanaguchi _ 初音未来",
+      "artist": "Miku",
+      "url": "/musicplayer/music/Miku - Anamanaguchi _ 初音未来.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Miku - Anamanaguchi _ 初音未来.lrc",
+      "theme": "#033677"
+    },
+    {
+      "name": "Feint",
+      "artist": "My Sunset (Original Mix)",
+      "url": "/musicplayer/music/My Sunset (Original Mix) - Feint.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/My Sunset (Original Mix) - Feint.lrc",
+      "theme": "#dacf5c"
+    },
+    {
+      "name": "BrunuhVille",
+      "artist": "Northwind",
+      "url": "/musicplayer/music/Northwind-BrunuhVille.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/Northwind-BrunuhVille.lrc",
+      "theme": "#39183f"
+    },
+    {
+      "name": "桃音モモ",
+      "artist": "Nyan Cat (彩虹猫)",
+      "url": "/musicplayer/music/Nyan Cat (彩虹猫) - 桃音モモ.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Nyan Cat (彩虹猫) - 桃音モモ.lrc",
+      "theme": "#297804"
+    },
+    {
+      "name": "宇多田ヒカル",
+      "artist": "One Last Kiss",
+      "url": "/musicplayer/music/One Last Kiss-宇多田ヒカル.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/One Last Kiss-宇多田ヒカル.lrc",
+      "theme": "#18ef8b"
+    },
+    {
+      "name": "Wisp X",
+      "artist": "Our Story (Wisp X Remix)",
+      "url": "/musicplayer/music/Our Story (Wisp X Remix) - Wisp X.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Our Story (Wisp X Remix) - Wisp X.lrc",
+      "theme": "#e5c268"
+    },
+    {
+      "name": "nomico",
+      "artist": "Pleasant Place",
+      "url": "/musicplayer/music/Pleasant Place-nomico.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/Pleasant Place-nomico.lrc",
+      "theme": "#c41f03"
+    },
+    {
+      "name": "ENV",
+      "artist": "Pneumatic Tokyo",
+      "url": "/musicplayer/music/Pneumatic Tokyo - ENV.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Pneumatic Tokyo - ENV.lrc",
+      "theme": "#12b1b5"
+    },
+    {
+      "name": "Who Is Loris",
+      "artist": "Righteous (Explicit)",
+      "url": "/musicplayer/music/Righteous (Explicit) - Who Is Loris.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Righteous (Explicit) - Who Is Loris.lrc",
+      "theme": "#69901a"
+    },
+    {
+      "name": "Mary Elizabeth McGlynn",
+      "artist": "Room of Angel",
+      "url": "/musicplayer/music/Room of Angel - Mary Elizabeth McGlynn.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Room of Angel - Mary Elizabeth McGlynn.lrc",
+      "theme": "#c26b06"
+    },
+    {
+      "name": "Max Coveri",
+      "artist": "Running in the 90's",
+      "url": "/musicplayer/music/Running in the 90's - Max Coveri.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Running in the 90's - Max Coveri.lrc",
+      "theme": "#cad8de"
+    },
+    {
+      "name": "ROY KNOX&Svniivan&Tim Beeren",
+      "artist": "Save Me",
+      "url": "/musicplayer/music/Save Me-ROY KNOX&Svniivan&Tim Beeren.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/Save Me-ROY KNOX&Svniivan&Tim Beeren.lrc",
+      "theme": "#6ef3dc"
+    },
+    {
+      "name": "Sarah Brightman",
+      "artist": "Scarborough Fair",
+      "url": "/musicplayer/music/Scarborough Fair-Sarah Brightman.aac",
+      "cover": "",
+      "lrc": "/musicplayer/music/Scarborough Fair-Sarah Brightman.lrc",
+      "theme": "#600004"
+    },
+    {
+      "name": "Taishi",
+      "artist": "Seraph (Original Mix)",
+      "url": "/musicplayer/music/Seraph (Original Mix) - Taishi.ogg",
+      "cover": "",
+      "lrc": "",
+      "theme": "#d1e06c"
+    },
+    {
+      "name": "RaiM&Artur&Adil",
+      "artist": "Simpa (Mikis Remix)",
+      "url": "/musicplayer/music/Simpa (Mikis Remix)-RaiM&Artur&Adil.aac",
+      "cover": "",
+      "lrc": "/musicplayer/music/Simpa (Mikis Remix)-RaiM&Artur&Adil.lrc",
+      "theme": "#590a9a"
+    },
+    {
+      "name": "Man_ Into the Spider-Verse)-Post Malone&Swae Lee",
+      "artist": "Sunflower (Spider",
+      "url": "/musicplayer/music/Sunflower (Spider-Man_ Into the Spider-Verse)-Post Malone&Swae Lee.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/Sunflower (Spider-Man_ Into the Spider-Verse)-Post Malone&Swae Lee.lrc",
+      "theme": "#32d6a3"
+    },
+    {
+      "name": "Snowtt",
+      "artist": "The call of the jungle",
+      "url": "/musicplayer/music/The call of the jungle - Snowtt.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/The call of the jungle - Snowtt.lrc",
+      "theme": "#99ce45"
+    },
+    {
+      "name": "Foxtail-Grass Studio",
+      "artist": "The des Alizes",
+      "url": "/musicplayer/music/The des Alizes-Foxtail-Grass Studio.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/The des Alizes-Foxtail-Grass Studio.lrc",
+      "theme": "#26f84e"
+    },
+    {
+      "name": "Dragonforce",
+      "artist": "Through The Fire And Flames",
+      "url": "/musicplayer/music/Through The Fire And Flames - Dragonforce.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Through The Fire And Flames - Dragonforce.lrc",
+      "theme": "#44f1af"
+    },
+    {
+      "name": "SharaX",
+      "artist": "Tick Tock (Undertronic Original)",
+      "url": "/musicplayer/music/Tick Tock (Undertronic Original) - SharaX.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Tick Tock (Undertronic Original) - SharaX.lrc",
+      "theme": "#ad91ba"
+    },
+    {
+      "name": "MYTH & ROID",
+      "artist": "Tough&Alone",
+      "url": "/musicplayer/music/Tough&Alone-MYTH & ROID.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/Tough&Alone-MYTH & ROID.lrc",
+      "theme": "#209469"
+    },
+    {
+      "name": "Italobrothers",
+      "artist": "Up N Away (Nightcore Edit)",
+      "url": "/musicplayer/music/Up N Away (Nightcore Edit) - Italobrothers.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/Up N Away (Nightcore Edit) - Italobrothers.lrc",
+      "theme": "#74f9c2"
+    },
+    {
+      "name": "Coldplay",
+      "artist": "Viva La Vida",
+      "url": "/musicplayer/music/Viva La Vida-Coldplay.aac",
+      "cover": "",
+      "lrc": "/musicplayer/music/Viva La Vida-Coldplay.lrc",
+      "theme": "#e5672d"
+    },
+    {
+      "name": "Charlie Puth",
+      "artist": "We Don't Talk Anymore",
+      "url": "/musicplayer/music/We Don't Talk Anymore-Charlie Puth.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/We Don't Talk Anymore-Charlie Puth.lrc",
+      "theme": "#9f22ae"
+    },
+    {
+      "name": "Secret Garden",
+      "artist": "Windancer",
+      "url": "/musicplayer/music/Windancer-Secret Garden.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/Windancer-Secret Garden.lrc",
+      "theme": "#f27397"
+    },
+    {
+      "name": "Yanni-歌词",
+      "artist": "With an Orchid",
+      "url": "/musicplayer/music/With an Orchid-Yanni-歌词.mp3",
+      "cover": "",
+      "lrc": "",
+      "theme": "#eb67d5"
+    },
+    {
+      "name": "上松範康",
+      "artist": "スカーレット",
+      "url": "/musicplayer/music/スカーレット - 上松範康.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/スカーレット - 上松範康.lrc",
+      "theme": "#8ac825"
+    },
+    {
+      "name": "しばやん( ˙꒳_˙)&Linjin",
+      "artist": "モノクロ・インザナイトfeat.Linjin (CYTOKINE remix)",
+      "url": "/musicplayer/music/モノクロ・インザナイトfeat.Linjin (CYTOKINE remix)-しばやん( ˙꒳_˙)&Linjin.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/モノクロ・インザナイトfeat.Linjin (CYTOKINE remix)-しばやん( ˙꒳_˙)&Linjin.lrc",
+      "theme": "#4f54d0"
+    },
+    {
+      "name": "supercell _ 初音未来",
+      "artist": "ワールドイズマイン (World is Mine)",
+      "url": "/musicplayer/music/ワールドイズマイン (World is Mine) - supercell _ 初音未来.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/ワールドイズマイン (World is Mine) - supercell _ 初音未来.lrc",
+      "theme": "#d4f0db"
+    },
+    {
+      "name": "Whisper Records",
+      "artist": "古の森",
+      "url": "/musicplayer/music/古の森 - Whisper Records.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/古の森 - Whisper Records.lrc",
+      "theme": "#00c228"
+    },
+    {
+      "name": "YOASOBI",
+      "artist": "夜に駆ける",
+      "url": "/musicplayer/music/夜に駆ける-YOASOBI.aac",
+      "cover": "",
+      "lrc": "/musicplayer/music/夜に駆ける-YOASOBI.lrc",
+      "theme": "#34bcb3"
+    },
+    {
+      "name": "小兔子",
+      "artist": "心里的爱 (提示音版_男版)",
+      "url": "/musicplayer/music/心里的爱 (提示音版_男版) - 小兔子.ogg",
+      "cover": "",
+      "lrc": "",
+      "theme": "#1e809f"
+    },
+    {
+      "name": "sakanaction",
+      "artist": "新宝島",
+      "url": "/musicplayer/music/新宝島-sakanaction.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/新宝島-sakanaction.lrc",
+      "theme": "#07f452"
+    },
+    {
+      "name": "MEGA",
+      "artist": "東 京 尋 情 記",
+      "url": "/musicplayer/music/東 京 尋 情 記 - MEGA.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/東 京 尋 情 記 - MEGA.lrc",
+      "theme": "#0d429f"
+    },
+    {
+      "name": "Kozato Snow",
+      "artist": "桜樹街道",
+      "url": "/musicplayer/music/桜樹街道 - Kozato Snow.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/桜樹街道 - Kozato Snow.lrc",
+      "theme": "#fd5df0"
+    },
+    {
+      "name": "Neru&鏡音リン&镜音レン&z'5",
+      "artist": "病名は爱だった",
+      "url": "/musicplayer/music/病名は爱だった-Neru&鏡音リン&镜音レン&z'5.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/病名は爱だった-Neru&鏡音リン&镜音レン&z'5.lrc",
+      "theme": "#b19d3d"
+    },
+    {
+      "name": "幽閉サテライト",
+      "artist": "華鳥風月(with senya)&lt;幻想万華鏡 花の異変の章 OP主題歌&gt;",
+      "url": "/musicplayer/music/華鳥風月(with senya)&lt;幻想万華鏡 花の異変の章 OP主題歌&gt;-幽閉サテライト.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/華鳥風月(with senya)&lt;幻想万華鏡 花の異変の章 OP主題歌&gt;-幽閉サテライト.lrc",
+      "theme": "#52a67d"
+    },
+    {
+      "name": "Feryquitous",
+      "artist": "蘭",
+      "url": "/musicplayer/music/蘭 - Feryquitous.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/蘭 - Feryquitous.lrc",
+      "theme": "#6d389d"
+    },
+    {
+      "name": "趣味工房にんじんわいん",
+      "artist": "陽炎の都、白日の租界 (阳炎之都，白日的租界)",
+      "url": "/musicplayer/music/陽炎の都、白日の租界 (阳炎之都，白日的租界) - 趣味工房にんじんわいん.ogg",
+      "cover": "",
+      "lrc": "/musicplayer/music/陽炎の都、白日の租界 (阳炎之都，白日的租界) - 趣味工房にんじんわいん.lrc",
+      "theme": "#54d3d8"
+    },
+    {
+      "name": "Lia",
+      "artist": "鳥の詩",
+      "url": "/musicplayer/music/鳥の詩-Lia.mp3",
+      "cover": "",
+      "lrc": "/musicplayer/music/鳥の詩-Lia.lrc",
+      "theme": "#283f3a"
+    }
+  ]
+}
