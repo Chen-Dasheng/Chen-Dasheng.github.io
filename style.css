@@ -1,0 +1,87 @@
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1); /* 半透明白色背景 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    padding: 20px;
+    color: #333;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar h1 {
+    color: #333; /* 改为深色 */
+    margin-bottom: 30px;
+}
+
+.nav-btn {
+    display: block;
+    width: 80%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7); /* 白色略透明 */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* 鼠标悬停时透明度降低 */
+}
+
+#playlist-select {
+    background-color: rgba(255, 255, 255, 0.7); /* 白色略透明 */
+    border: none;
+    border-radius: 10px; /* 圆角 */
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+}
+
+#playlist-select:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* 鼠标悬停时透明度降低 */
+}
+
+.main-content {
+    margin-left: 270px; /* 留出侧边栏的空间 */
+    padding: 20px;
+    color: #333; /* 改为深色 */
+}
+
+#back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 20px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    font-size: 18px; /* Increase font size */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(255, 255, 255, 0.7); /* Set a background color */
+    color: #333; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#back-to-top:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Darker background on hover */
+}

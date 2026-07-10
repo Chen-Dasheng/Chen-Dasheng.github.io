@@ -5,66 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SnapLittlebear</title>
     <link rel="icon" href="icon.png" type="image/x-icon">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #f4f6fa;
-        }
-        .sidebar {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 200px;
-            height: 100vh;
-            background: #232946;
-            color: #fff;
-            padding: 40px 0 0 0;
-            box-shadow: 2px 0 8px rgba(0,0,0,0.05);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .sidebar h1 {
-            font-size: 1.4em;
-            margin-bottom: 40px;
-            letter-spacing: 1px;
-        }
-        .sidebar .nav-btn {
-            display: block;
-            width: 150px;
-            margin: 10px 0;
-            padding: 12px 0;
-            background: #eebbc3;
-            color: #232946;
-            border: none;
-            border-radius: 6px;
-            font-size: 1em;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            transition: background 0.2s, color 0.2s;
-            cursor: pointer;
-        }
-        .sidebar .nav-btn:hover {
-            background: #d4939d;
-            color: #fff;
-        }
-        .main-content {
-            margin-left: 220px;
-            padding: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="sidebar">
         <h1>SnapLittlebear</h1>
-        <a href="/warehouse.html" class="nav-btn">仓库</a>
+        <a href="/" class="nav-btn">首页</a>
         <a href="/music.html" class="nav-btn">音乐播放器</a>
+        <a href="/warehouse.html" class="nav-btn">仓库</a>
     </div>
     <div class="main-content">
         <h2>欢迎来到 SnapLittlebear 的网站！</h2>
         <p>请选择左侧的功能按钮进行访问。</p>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = [
+                'background/alena-aenami-003.jpg',
+                'background/alena-aenami-004.jpg',
+                'background/alena-aenami-7p-m-1k.jpg',
+                'background/alena-aenami-atlast2k2.jpg',
+                'background/alena-aenami-away-1k.jpg',
+                'background/alena-aenami-budapest.jpg',
+                'background/alena-aenami-dreamer-1k.jpg',
+                'background/alena-aenami-fade-1k.jpg',
+                'background/alena-aenami-far-from-tomorrow-1080px.jpg',
+                'background/alena-aenami-horizon-1k.jpg',
+                'background/alena-aenami-imhere1k.jpg',
+                'background/alena-aenami-lines1k.jpg',
+                'background/alena-aenami-lost-1k.jpg',
+                'background/alena-aenami-lunar-cover.jpg',
+                'background/alena-aenami-million-little-pieces-1k.jpg',
+                'background/alena-aenami-newwacom1-1-b-1k.jpg',
+                'background/alena-aenami-night-1k.jpg',
+                'background/alena-aenami-over-the-city1k.jpg',
+                'background/alena-aenami-stay-1k.jpg',
+                'background/waterReimu.jpg'
+            ];
+            const randomIndex = Math.floor(Math.random() * images.length);
+            document.body.style.backgroundImage = `url('${images[randomIndex]}')`;
+        });
+    </script>
+    <button id="back-to-top" title="回到顶部">↑</button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener('click', function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
 </body>
 </html>

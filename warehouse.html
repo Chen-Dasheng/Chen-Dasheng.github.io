@@ -5,41 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warehouse</title>
     <link rel="icon" href="icon.png" type="image/x-icon">
-    <style>
-        .file-list {
-            margin: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
-        .file-item {
-            margin: 5px;
-            padding: 8px;
-            background-color: #f5f5f5;
-            cursor: pointer;
-        }
-        #preview-container {
-            margin: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            position: relative;  /* 新增定位上下文 */
-        }
-        .close-btn {
-            position: absolute;
-            right: 15px;
-            top: 15px;
-            padding: 5px 10px;
-            background: #ff4444;
-            color: white;
-            border: none;
-            cursor: pointer;
-            z-index: 1000;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="/index.html" style="display:inline-block; margin:16px;">
-    <img src="icon.png" alt="返回主页" style="height:40px;">
-    </a>
+    <div class="sidebar">
+        <h1>SnapLittlebear</h1>
+        <a href="/" class="nav-btn">首页</a>
+        <a href="/music.html" class="nav-btn">音乐播放器</a>
+        <a href="/warehouse.html" class="nav-btn">仓库</a>
+    </div>
+    <div class="main-content">
     <h1>资源仓库</h1>
     
     <div class="file-list" id="fileList">
@@ -117,6 +92,56 @@
             ${viewerHTML}
         `;
     }
+    </script>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = [
+                'background/alena-aenami-003.jpg',
+                'background/alena-aenami-004.jpg',
+                'background/alena-aenami-7p-m-1k.jpg',
+                'background/alena-aenami-atlast2k2.jpg',
+                'background/alena-aenami-away-1k.jpg',
+                'background/alena-aenami-budapest.jpg',
+                'background/alena-aenami-dreamer-1k.jpg',
+                'background/alena-aenami-fade-1k.jpg',
+                'background/alena-aenami-far-from-tomorrow-1080px.jpg',
+                'background/alena-aenami-horizon-1k.jpg',
+                'background/alena-aenami-imhere1k.jpg',
+                'background/alena-aenami-lines1k.jpg',
+                'background/alena-aenami-lost-1k.jpg',
+                'background/alena-aenami-lunar-cover.jpg',
+                'background/alena-aenami-million-little-pieces-1k.jpg',
+                'background/alena-aenami-newwacom1-1-b-1k.jpg',
+                'background/alena-aenami-night-1k.jpg',
+                'background/alena-aenami-over-the-city1k.jpg',
+                'background/alena-aenami-stay-1k.jpg',
+                'background/waterReimu.jpg'
+            ];
+            const randomIndex = Math.floor(Math.random() * images.length);
+            document.body.style.backgroundImage = `url('${images[randomIndex]}')`;
+        });
+    </script>
+    <button id="back-to-top" title="回到顶部">↑</button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener('click', function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
     </script>
 </body>
 </html>

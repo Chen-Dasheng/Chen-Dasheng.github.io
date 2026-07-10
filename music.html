@@ -5,38 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
     <link rel="stylesheet" href="/musicplayer/dist/APlayer.min.css">
-    <style>
-        body {
-            background: #f7f7f7;
-            font-family: "Segoe UI", "Arial", sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        #playlist-select {
-            margin: 40px 0 20px 0;
-            padding: 8px 16px;
-            font-size: 16px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            transition: border-color 0.2s;
-        }
-        #playlist-select:focus {
-            border-color: #FADFA3;
-            outline: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="/index.html" style="display:inline-block; margin:16px;">
-    <img src="icon.png" alt="返回主页" style="height:40px;">
-    </a>
+    <div class="sidebar">
+        <h1>SnapLittlebear</h1>
+        <a href="/" class="nav-btn">首页</a>
+        <a href="/music.html" class="nav-btn">音乐播放器</a>
+        <a href="/warehouse.html" class="nav-btn">仓库</a>
+    </div>
+    <div class="main-content">
     <link rel="stylesheet" href="/musicplayer/dist/APlayer.min.css">
     <!-- 歌单选择下拉框 -->
+    <span id="playlist-label">歌单</span>
     <select id="playlist-select">
         <option value="/musicplayer/list/web.json">web</option>
         <option value="/musicplayer/list/">null</option>
@@ -85,6 +66,56 @@
 
         // 页面加载时默认加载第一个歌单
         loadPlaylist(document.getElementById('playlist-select').value);
+    </script>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = [
+                'background/alena-aenami-003.jpg',
+                'background/alena-aenami-004.jpg',
+                'background/alena-aenami-7p-m-1k.jpg',
+                'background/alena-aenami-atlast2k2.jpg',
+                'background/alena-aenami-away-1k.jpg',
+                'background/alena-aenami-budapest.jpg',
+                'background/alena-aenami-dreamer-1k.jpg',
+                'background/alena-aenami-fade-1k.jpg',
+                'background/alena-aenami-far-from-tomorrow-1080px.jpg',
+                'background/alena-aenami-horizon-1k.jpg',
+                'background/alena-aenami-imhere1k.jpg',
+                'background/alena-aenami-lines1k.jpg',
+                'background/alena-aenami-lost-1k.jpg',
+                'background/alena-aenami-lunar-cover.jpg',
+                'background/alena-aenami-million-little-pieces-1k.jpg',
+                'background/alena-aenami-newwacom1-1-b-1k.jpg',
+                'background/alena-aenami-night-1k.jpg',
+                'background/alena-aenami-over-the-city1k.jpg',
+                'background/alena-aenami-stay-1k.jpg',
+                'background/waterReimu.jpg'
+            ];
+            const randomIndex = Math.floor(Math.random() * images.length);
+            document.body.style.backgroundImage = `url('${images[randomIndex]}')`;
+        });
+    </script>
+    <button id="back-to-top" title="回到顶部">↑</button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener('click', function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
     </script>
 </body>
 </html>
